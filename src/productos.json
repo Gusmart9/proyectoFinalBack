@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "God of War Ragnarök",
+    "description": "Accion",
+    "code": "01",
+    "price": 50,
+    "status": true,
+    "stock": 50,
+    "category": "Juegos",
+    "thumbnails": "/images/juego1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Resident Evil 4",
+    "description": "Zombie",
+    "code": "02",
+    "price": 80,
+    "status": true,
+    "stock": 80,
+    "category": "Juegos",
+    "thumbnails": "/images/juego2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "TMNT",
+    "description": "Tortugas",
+    "code": "03",
+    "price": 20,
+    "status": true,
+    "stock": 20,
+    "category": "Juegos",
+    "thumbnails": "/images/juego3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Fifa 24",
+    "description": "Deporte",
+    "code": "04",
+    "price": 100,
+    "status": true,
+    "stock": 100,
+    "category": "Juegos",
+    "thumbnails": "/images/juego4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "NBA 24",
+    "description": "Deporte",
+    "code": "05",
+    "price": 90,
+    "status": true,
+    "stock": 90,
+    "category": "Juegos",
+    "thumbnails": "/images/juego5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Naruto",
+    "description": "Accion",
+    "code": "06",
+    "price": 65,
+    "status": true,
+    "stock": 65,
+    "category": "Juegos",
+    "thumbnails": "/images/juego6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Fortnite",
+    "description": "Disparos",
+    "code": "07",
+    "price": 55,
+    "status": true,
+    "stock": 55,
+    "category": "Juegos",
+    "thumbnails": "/images/juego7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Resident Evil 2",
+    "description": "Zombie",
+    "code": "08",
+    "price": 160,
+    "status": true,
+    "stock": 160,
+    "category": "Juegos",
+    "thumbnails": "/images/juego8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Metal Gear",
+    "description": "Aventura",
+    "code": "09",
+    "price": 110,
+    "status": true,
+    "stock": 110,
+    "category": "Juegos",
+    "thumbnails": "/images/juego9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Metal Gear 2",
+    "description": "Aventura",
+    "code": "10",
+    "price": 130,
+    "status": true,
+    "stock": 130,
+    "category": "Juegos",
+    "thumbnails": "/images/juego10.jpg"
+  }
+]

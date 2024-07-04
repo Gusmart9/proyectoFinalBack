@@ -1,0 +1,23 @@
+body {
+    box-sizing: border-box;
+    margin: 1;
+    padding: 1;
+    background-color: whitesmoke;
+    color: red;
+}
+a:link, a:visited, a:active{
+    text-decoration:none;
+}
+td {
+    width: 2%;
+}
+.ticket {
+    background-color: goldenrod;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border-radius: 15px;
+    padding: 15px;
+}

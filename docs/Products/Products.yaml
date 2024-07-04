@@ -1,0 +1,147 @@
+paths:
+  /api/products:
+    get:
+      summary: Obtiene todos los productos
+      tags:
+        - Products
+      responses:
+        "200":
+          description: Los productos fueron obtenidos de la base de datos satisfactoriamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/product'
+        "500":
+          description: Error interno del servidor
+
+    post:
+      summary: Crea un producto en la base de datos
+      tags:
+        - Products
+      requestBody:
+        required: True
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  required: True
+                description:
+                  type: string
+                  required: True
+                code:
+                  type: string
+                  required: True
+                price:
+                  type: number
+                  required: True
+                stock:
+                  type: number
+                  required: True
+                category:
+                  type: string
+                  required: True
+                thumbnail:
+                  type: string
+                status:
+                  type: boolean
+              required:
+                - title
+                - description
+                - code
+                - price
+                - stock
+                - category
+      responses:
+        "201":
+          description: El producto se creó en la base de datos con éxito
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/product'
+        "500":
+          description: Error interno del servidor
+
+  /api/products/{productId}:
+    get:
+      summary: Obtiene un producto especifico recibido por parametro en la url
+      tags:
+        - Products
+      responses:
+        "200":
+          description: El producto fue obtenido de la base de datos satisfactoriamente
+        "404":
+          description: El producto no fue encontrado
+        "500":
+          description: Error interno del servidor
+    
+    put:
+      summary: Actualiza un producto especifico recibido por parametro en la url
+      tags:
+        - Products
+      responses:
+        "200":
+          description: El producto se actualizó con éxito
+        "404":
+          description: El producto no fue encontrado
+        "500":
+          description: Error interno del servidor
+
+    delete:
+      summary: Elimina un producto especifico recibido por parametro en la url
+      tags:
+        - Products
+      responses:
+        "200":
+          description: El producto fue eliminado con éxito
+        "404":
+          description: No puedes eliminar este producto / Producto no encontrado
+        "500":
+          description: Error interno del servidor
+
+components:
+  schemas:
+    product:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: Id autogenerado de Mongo
+        title:
+          type: string
+          description: Nombre del producto
+        description:
+          type: string
+          description: Descripción del producto
+        code:
+          type: string
+          description: Código del producto
+        status:
+          type: boolean
+          description: True por defecto
+        price:
+          type: number
+          description: Precio del producto
+        stock:
+          type: number
+          description: Cantidad en stock del producto
+        category:
+          type: string
+          description: Categoria a la que pertenece el producto
+        thumbnail:
+          type: string
+          description: Array con links a las rutas de las imágenes del producto
+        owner:
+          type: string
+          description: Datos de quien creó el producto en la base de datos
+      required:
+        - title
+        - description
+        - code
+        - price
+        - stock
+        - category
